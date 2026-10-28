@@ -1,0 +1,8 @@
+Release notes for the indexer.
+
+Version 0.1 introduces incremental synchronization. When you run the ingest
+command again, only new and changed files are reprocessed, and files that were
+removed from the source directory are purged from the index.
+
+Deduplication removes repeated passages so the index does not return the same
+text several times for one query.

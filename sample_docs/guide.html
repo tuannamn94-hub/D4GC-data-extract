@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Retrieval Guide</title>
+  <style>body { font-family: sans-serif; }</style>
+</head>
+<body>
+  <h1>Retrieval Guide</h1>
+  <p>This guide explains how search works once documents are indexed.</p>
+  <h2>How search works</h2>
+  <p>A query is embedded into the same vector space as the chunks. The store
+  returns the chunks whose vectors are closest to the query vector.</p>
+  <h2>Supported formats</h2>
+  <table>
+    <tr><th>Format</th><th>Parser</th></tr>
+    <tr><td>PDF</td><td>pypdf</td></tr>
+    <tr><td>HTML</td><td>BeautifulSoup</td></tr>
+    <tr><td>Markdown</td><td>built-in</td></tr>
+  </table>
+  <script>console.log("this should be ignored by the extractor");</script>
+</body>
+</html>

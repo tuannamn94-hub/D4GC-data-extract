@@ -1,0 +1,18 @@
+# Optional, higher-quality backends. The pipeline runs without any of these
+# using built-in fallbacks, but installing them improves results.
+
+# Faster vector math (the store falls back to pure Python without it).
+numpy>=1.24
+
+# Real PDF text extraction with page numbers.
+pypdf>=4.0
+
+# Robust HTML parsing.
+beautifulsoup4>=4.12
+lxml>=5.0
+
+# Stronger language detection.
+langdetect>=1.0.9
+
+# Real multilingual embeddings. Large download; optional.
+# sentence-transformers>=2.6
