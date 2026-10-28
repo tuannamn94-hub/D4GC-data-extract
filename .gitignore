@@ -13,7 +13,11 @@ env/
 
 # Pipeline output / index artifacts
 .index/
+d4gc_index/
 *.db
+
+# Large datasets and extracted archives (do not commit)
+D4GC data/extracted/
 
 # OS / editor
 .DS_Store
